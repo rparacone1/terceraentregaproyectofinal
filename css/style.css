@@ -46,7 +46,7 @@ h1{
 
 
 nav{
-    background-color: pink;
+    background-color: pin;
     grid-area: nav;
     display: flex;
     align-items: center;
@@ -56,7 +56,6 @@ nav{
 {
     display: flex;
     justify-content: center;
-    background-color: black;
 }
 .item
 {   display: inline-flex;
@@ -73,7 +72,7 @@ nav{
 {   display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: ed;
     grid-area: section1;
 }
 
@@ -86,7 +85,7 @@ nav{
 {   display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: blu;
     grid-area: section2;
 }
 .tituloSection2
@@ -104,7 +103,7 @@ aside
 {   display: flex;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+    background-color: yellw;
     grid-area: aside;
 }
 
@@ -112,7 +111,7 @@ aside
 
 /* FOOTER */
 footer{
-    background-color: green;
+    background-color: gren;
     grid-area: footer;
 }
 
@@ -144,10 +143,10 @@ footer{
 
 
 
-/* Section 1 autos.html */
+/* Section 1 autos.html BMW */
 #section1autos
 {  
-    background-color: red;
+    background-color: re;
     grid-area: section1autos;
 }
 
@@ -159,22 +158,23 @@ footer{
 
 .bmwHijo
 {
-    background-color: black;
+    background-color: blac;
 }
 
 .tituloBmw{
  text-align: center;
+ color: white;
 
 }
 
 
 
-/* Section 2 autos.html */
+/* Section 2 autos.html AUDI */
 
 
 #section2autos
 {  
-    background-color: red;
+    background-color: re;
     grid-area: section2autos;
 }
 .audiPadre
@@ -185,29 +185,42 @@ footer{
 }
 .tituloAudi{
     text-align: center;
+    color: white;
    }
 
 .audiHijo
 {   
   
-    background-color: black;
+    background-color: blac;
 }
 
 
 
 
 
-
-
-
-
-
+/* Section 3, Mercedes Benz */
 
 #section3
-{   display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+{ 
+    background-color: whit;
     grid-area: section3;
 }
+.tituloMercedes
+{
+    text-align: center;
+    color: white;
+}
+.benzPadre
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    
+    
+}
+
+/* Section Camionetas */
+
+
 
