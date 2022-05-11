@@ -72,9 +72,9 @@ nav{
 {   display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ed;
     grid-area: section1;
 }
+
 
 
 
@@ -146,22 +146,35 @@ footer{
 /* Section 1 autos.html BMW */
 #section1autos
 {  
-    background-color: re;
     grid-area: section1autos;
+  
 }
 
 .bmwPadre
 {   
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
+
 }
 
 .bmwHijo
-{
-    background-color: blac;
+{   display: flex;
+    background-color: white;
+    margin: 0px 5px 0px 0px;
+    padding: 1px 1px 1px 1px;
+    border: 1px solid black;
+}
+/* Div Hijos Camionetas.html */
+.bmwHijo1{
+    display: flex;
+    background-color: white;
+    margin: 0px 10px 0px 0px;
+    padding: 0px 10px 0px 0px;
+    border: 1px solid black;
 }
 
-.tituloBmw{
+.tituloBmw {
  text-align: center;
  color: white;
 
@@ -183,6 +196,9 @@ footer{
     justify-content: space-between;
     flex-direction: row;
 }
+.audiHijo{
+    background-color: white;
+}
 .tituloAudi{
     text-align: center;
     color: white;
@@ -191,7 +207,8 @@ footer{
 .audiHijo
 {   
   
-    background-color: blac;
+  
+    border: 1px solid black;
 }
 
 
@@ -219,7 +236,10 @@ footer{
     
     
 }
-
+.benzHijo{
+    background-color: white;
+    border: 1px solid black;
+}
 /* Section Camionetas */
 
 
