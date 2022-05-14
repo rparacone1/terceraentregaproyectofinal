@@ -1,0 +1,39 @@
+/* SECTION 1 */
+#section1
+{   display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: section1;
+}
+
+/* autos html */
+#section1autos
+{  
+    grid-area: section1autos;
+  
+}
+
+.bmwPadre
+{   
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.bmwHijo
+{   display: flex;
+    background-color: white;
+    margin: 0px 5px 0px 0px;
+    padding: 1px 1px 1px 1px;
+    border: 1px solid black;
+}
+
+#section1nosotros
+{  
+    display: flex;
+    justify-content: center;
+    grid-area: section1nosotros;
+  
+}
+

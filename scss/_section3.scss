@@ -1,0 +1,26 @@
+
+/* Section 3, Mercedes Benz */
+
+#section3
+{ 
+    background-color: whit;
+    grid-area: section3;
+}
+.tituloMercedes
+{
+    text-align: center;
+    color: white;
+}
+.benzPadre
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    
+    
+}
+.benzHijo{
+    background-color: white;
+    border: 1px solid black;
+}

@@ -1,5 +1,12 @@
 @import 'header';
 @import 'footer';
+@import 'section1';
+@import 'section2';
+@import 'section3';
+@import 'nav';
+@import 'aside';
+@import 'contacto';
+
 /* Nesting o anidamiento w/lepafresh */
 /* Selector universal, pego los objetos*/
 *{
@@ -23,87 +30,9 @@ body
 
 }
 
-
-
-/* NAV */
-
-
-nav{
-    grid-area: nav;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.pruebaDiv
-{
-    display: flex;
-    justify-content: center;
-}
-.item
-{   display: inline-flex;
-    background-color: black;
-}
-.item li {
-    font-size: 150%;
-    color: white;
-}
-
-
-/* SECTION 1 */
-#section1
-{   display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: section1;
-}
-
-
-
-
-/* SECTION 2 */
-
-
-#section2
-{   display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blu;
-    grid-area: section2;
-}
-.tituloSection2
-{   color: white;
-    text-align: center;
-    font-size: 3rem;
-     
-}
-.videodivSection
-{
-    background-color: re;
-}
-
-
-
-/* ASIDE */
-aside
-{   display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: yellw;
-    grid-area: aside;
-}
-
-
-
-
-
 /* En este sector empieza el css de autos.html */
 
-
-
-
-
 /* Creo una estructura gird para auto.html nueva, modifico la anterior sumandole una tercer etiqueta de section */
-
 #body
 {   display: grid;
     grid-template-areas:
@@ -120,109 +49,7 @@ aside
 
 }
 
-
-
-/* Section 1 autos.html BMW */
-#section1autos
-{  
-    grid-area: section1autos;
-  
-}
-
-.bmwPadre
-{   
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-
-}
-
-.bmwHijo
-{   display: flex;
-    background-color: white;
-    margin: 0px 5px 0px 0px;
-    padding: 1px 1px 1px 1px;
-    border: 1px solid black;
-}
-/* Div Hijos Camionetas.html */
-.bmwHijo1{
-    display: flex;
-    background-color: white;
-    margin: 0px 10px 0px 0px;
-    padding: 0px 10px 0px 0px;
-    border: 1px solid black;
-}
-
-.tituloBmw {
- text-align: center;
- color: white;
-
-}
-
-
-
-/* Section 2 autos.html AUDI */
-
-
-#section2autos
-{  
-    background-color: re;
-    grid-area: section2autos;
-}
-.audiPadre
-{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-.audiHijo{
-    background-color: white;
-}
-.tituloAudi{
-    text-align: center;
-    color: white;
-   }
-
-.audiHijo
-{   
-  
-  
-    border: 1px solid black;
-}
-
-
-
-
-
-/* Section 3, Mercedes Benz */
-
-#section3
-{ 
-    background-color: whit;
-    grid-area: section3;
-}
-.tituloMercedes
-{
-    text-align: center;
-    color: white;
-}
-.benzPadre
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    
-    
-}
-.benzHijo{
-    background-color: white;
-    border: 1px solid black;
-}
-/* Section Camionetas */
-
-
-/* nosotros.html */
+/* en este sector empieza el css del archivo nosotros.html */
 #bodyNosotros
 {   display: grid;
     grid-template-areas:
@@ -238,76 +65,8 @@ aside
 
 }
 
-#section1nosotros
-{  
-    display: flex;
-    justify-content: center;
-    grid-area: section1nosotros;
-  
-}
-
-#section2nosotros
-{   
-    grid-area: section2nosotros;
-}
-
-
 .texto
 {
     color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Contacto.html */
-
-.lepaFresh
-{
-    color: white;
-}
-.hijo{
-    color:white;
-}
-
-label{
-    background-color: white;
-}
-
-.instagram
-{
-    color: white;
-    font-size: 20px;
-}
-
-.twitter{
-    font-size: 20px;
-    color: white;
-}
