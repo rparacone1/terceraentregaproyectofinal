@@ -23,47 +23,6 @@ footer {
   grid-area: footer;
 }
 
-/* Nesting o anidamiento w/lepafresh */
-/* Selector universal, pego los objetos*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Body */
-body {
-  display: grid;
-  grid-template-areas: "header header header" "nav section1 aside" "nav section2 aside" "footer footer footer";
-  grid-template-columns: 0.75fr 4fr 0.75fr;
-  grid-template-rows: 0.5fr 2fr 2fr 0.5fr;
-  background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
-  background-size: cover;
-  background-position: center;
-}
-
-/* NAV */
-nav {
-  grid-area: nav;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pruebaDiv {
-  display: flex;
-  justify-content: center;
-}
-
-.item {
-  display: inline-flex;
-  background-color: black;
-}
-
-.item li {
-  font-size: 150%;
-  color: white;
-}
-
 /* SECTION 1 */
 #section1 {
   display: flex;
@@ -72,47 +31,7 @@ nav {
   grid-area: section1;
 }
 
-/* SECTION 2 */
-#section2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: blu;
-  grid-area: section2;
-}
-
-.tituloSection2 {
-  color: white;
-  text-align: center;
-  font-size: 3rem;
-}
-
-.videodivSection {
-  background-color: re;
-}
-
-/* ASIDE */
-aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: yellw;
-  grid-area: aside;
-}
-
-/* En este sector empieza el css de autos.html */
-/* Creo una estructura gird para auto.html nueva, modifico la anterior sumandole una tercer etiqueta de section */
-#body {
-  display: grid;
-  grid-template-areas: "header header header" "nav section1autos aside" "nav section2autos aside" "nav section3 aside" "footer footer footer";
-  grid-template-columns: 0.75fr 4fr 0.75fr;
-  grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
-  background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
-  background-size: cover;
-  background-position: center;
-}
-
-/* Section 1 autos.html BMW */
+/* autos html */
 #section1autos {
   grid-area: section1autos;
 }
@@ -131,6 +50,29 @@ aside {
   border: 1px solid black;
 }
 
+#section1nosotros {
+  display: flex;
+  justify-content: center;
+  grid-area: section1nosotros;
+}
+
+#section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: section2;
+}
+
+.tituloSection2 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.videodivSection {
+  background-color: re;
+}
+
 /* Div Hijos Camionetas.html */
 .bmwHijo1 {
   display: flex;
@@ -147,7 +89,6 @@ aside {
 
 /* Section 2 autos.html AUDI */
 #section2autos {
-  background-color: re;
   grid-area: section2autos;
 }
 
@@ -168,6 +109,10 @@ aside {
 
 .audiHijo {
   border: 1px solid black;
+}
+
+#section2nosotros {
+  grid-area: section2nosotros;
 }
 
 /* Section 3, Mercedes Benz */
@@ -193,30 +138,34 @@ aside {
   border: 1px solid black;
 }
 
-/* Section Camionetas */
-/* nosotros.html */
-#bodyNosotros {
-  display: grid;
-  grid-template-areas: "header header header" "nav section1nosotros aside" "nav section2nosotros aside" "footer footer footer";
-  grid-template-columns: 0.75fr 4fr 0.75fr;
-  grid-template-rows: 0.5fr 2fr 2fr 0.5fr;
-  background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
-  background-size: cover;
-  background-position: center;
+nav {
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#section1nosotros {
+.pruebaDiv {
   display: flex;
   justify-content: center;
-  grid-area: section1nosotros;
 }
 
-#section2nosotros {
-  grid-area: section2nosotros;
+.item {
+  display: inline-flex;
+  background-color: black;
 }
 
-.texto {
+.item a {
   color: white;
+  font-size: 150%;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellw;
+  grid-area: aside;
 }
 
 /* Contacto.html */
@@ -242,4 +191,127 @@ label {
   color: white;
 }
 
+/* Nesting o anidamiento w/lepafresh */
+/* Selector universal, pego los objetos*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  display: grid;
+  grid-template-areas: "header header header" "nav section1 aside" "nav section2 aside" "footer footer footer";
+  grid-template-columns: 0.75fr 4fr 0.75fr;
+  grid-template-rows: 0.5fr 2fr 2fr 0.5fr;
+  background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
+  background-size: cover;
+  background-position: center;
+}
+
+/* En este sector empieza el css de autos.html */
+/* Creo una estructura gird para auto.html nueva, modifico la anterior sumandole una tercer etiqueta de section */
+#body {
+  display: grid;
+  grid-template-areas: "header header header" "nav section1autos aside" "nav section2autos aside" "nav section3 aside" "footer footer footer";
+  grid-template-columns: 0.75fr 4fr 0.75fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+  background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
+  background-size: cover;
+  background-position: center;
+}
+
+/* en este sector empieza el css del archivo nosotros.html */
+#bodyNosotros {
+  display: grid;
+  grid-template-areas: "header header header" "nav section1nosotros aside" "nav section2nosotros aside" "footer footer footer";
+  grid-template-columns: 0.75fr 4fr 0.75fr;
+  grid-template-rows: 0.5fr 1fr 0.3fr 0.5fr;
+  background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
+  background-size: cover;
+  background-position: center;
+}
+
+.texto {
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
+
+.autosIndividuales
+{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav sectionIndiv aside"
+    "footer footer footer";
+    grid-template-columns: 0.75fr 4fr 0.75fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
+    background-size: cover;
+    background-position: center;
+ 
+}
+
+.section1Indiv
+{   background-color: blue;
+ grid-area: sectionIndiv;
+ }
+
+
+.red{background-color: black;
+display: flex;
+justify-content: center;}
+
+.imagenAuto
+{
+  height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

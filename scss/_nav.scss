@@ -1,19 +1,28 @@
+
 nav{
     grid-area: nav;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .pruebaDiv
 {
     display: flex;
     justify-content: center;
 }
+
+
 .item
 {   display: inline-flex;
     background-color: black;
+  
 }
-.item li {
-    font-size: 150%;
+
+
+
+.item a{
     color: white;
+    font-size: 150%;
 }
+ 
