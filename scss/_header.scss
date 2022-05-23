@@ -4,13 +4,14 @@
 header{
     display: flex;
     justify-content: center;
-    align-items: center;
     grid-area: header;
 }
 
 .flexHeader {
     display: inline-flex;
     background-color: lightblue;
+  justify-items: center;
+
 }
 
 h1{

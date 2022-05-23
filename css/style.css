@@ -254,12 +254,13 @@ body {
 }
 
 .section1Indiv
-{   background-color: blue;
+{   
  grid-area: sectionIndiv;
  }
 
 
-.red{background-color: black;
+.red{
+
 display: flex;
 justify-content: center;}
 
@@ -268,6 +269,17 @@ justify-content: center;}
   height: 500px;
 }
 
+.textoIndividual
+{
+  color: white;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  grid-area: header;
+}
 
 
 
