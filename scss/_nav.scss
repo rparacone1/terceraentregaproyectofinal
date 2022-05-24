@@ -2,27 +2,11 @@
 nav{
     grid-area: nav;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
+    background-color: white;
 
 }
-.pruebaDiv
-{
-    display: flex;
-    justify-content: center;
-}
-
-
-.item
-{   display: inline-flex;
-    background-color: black;
-  
-}
 
 
 
-.item a{
-    color: white;
-    font-size: 150%;
-}
- 

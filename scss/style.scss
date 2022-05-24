@@ -1,15 +1,11 @@
-/* HEADER */
-/* Declaro header en grid */
 @import 'header';
 @import 'section1';
 @import 'section2';
 @import 'section3';
-@import 'nav';
 @import 'aside';
+@import 'nav';
 @import 'contacto';
 @import 'footer';
-
-
 
 /* Nesting o anidamiento w/lepafresh */
 /* Selector universal, pego los objetos*/
@@ -21,7 +17,11 @@
 /* Body */
 body {
   display: grid;
-  grid-template-areas: "header header header" "nav section1 aside" "nav section2 aside" "footer footer footer";
+  grid-template-areas:
+   "header header header"
+   "nav section1 aside" 
+   "nav section2 aside"
+    "footer footer footer";
   grid-template-columns: 0.75fr 4fr 0.75fr;
   grid-template-rows: 0.5fr 2fr 2fr 0.5fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
@@ -33,33 +33,43 @@ body {
 /* Creo una estructura gird para auto.html nueva, modifico la anterior sumandole una tercer etiqueta de section */
 #body {
   display: grid;
-  grid-template-areas: "header header header" "nav section1autos aside" "nav section2autos aside" "nav section3 aside" "footer footer footer";
+  grid-template-areas: 
+  "header header header"
+   "nav section1autos aside" 
+   "nav section2autos aside" 
+   "nav section3 aside" 
+   "footer footer footer";
   grid-template-columns: 0.75fr 4fr 0.75fr;
   grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
   background-position: center;
 }
-
-/* en este sector empieza el css del archivo nosotros.html */
-#bodyNosotros {
+ /* en este sector empieza el css del archivo nosotros.html  */
+#bodyNosotros 
+{
   display: grid;
-  grid-template-areas: "header header header" "nav section1nosotros aside" "nav section2nosotros aside" "footer footer footer";
+  grid-template-areas:
+   "header header header" 
+  "nav section1nosotros aside"
+   "nav section2nosotros aside"
+    "footer footer footer";
   grid-template-columns: 0.75fr 4fr 0.75fr;
-  grid-template-rows: 0.5fr 1fr 0.3fr 0.5fr;
+  grid-template-rows: 0.5fr 0.2r 0.2fr 0.5fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
   background-position: center;
 }
 
-.texto {
-  color: white;
-}
+
 
 /*# sourceMappingURL=style.css.map */
 .autosIndividuales {
   display: grid;
-  grid-template-areas: "header header header" "nav sectionIndiv aside" "footer footer footer";
+  grid-template-areas: 
+  "header header header"
+   "nav sectionIndiv aside" 
+   "footer footer footer";
   grid-template-columns: 0.75fr 4fr 0.75fr;
   grid-template-rows: 0.5fr 2fr 0.5fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
@@ -71,18 +81,13 @@ body {
   grid-area: sectionIndiv;
 }
 
-.red {
-  display: flex;
-  justify-content: center;
-}
-
-.imagenAuto {
-  height: 500px;
-}
-
-.textoIndividual {
-  color: white;
-}
-
-
 /*# sourceMappingURL=style.scss.map */
+
+/* Responsive Autos y camionetas */
+@media screen and (max-width: 500px) 
+{ 
+.paginaPrincipal{
+font-size: 80%;
+}
+
+}

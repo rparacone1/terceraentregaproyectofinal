@@ -35,6 +35,31 @@
     display: flex;
     justify-content: center;
     grid-area: section1nosotros;
+    background-color: ellow;
   
 }
 
+
+
+
+
+
+
+.section1Indiv {
+    grid-area: sectionIndiv;
+  }
+  
+  .red {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imagenAuto {
+    height: 70%;
+    width: 90%;
+  }
+  
+  .textoIndividual {
+    color: white;
+  }
+  

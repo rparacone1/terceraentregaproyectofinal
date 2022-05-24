@@ -1,26 +1,32 @@
 /* HEADER */
 /* Declaro header en grid */
 header {
+  grid-area: header;
+  background-color: black;
+}
+
+.flexFlex {
+  background-color: black;
   display: flex;
   justify-content: center;
-  align-items: center;
-  grid-area: header;
 }
 
 .flexHeader {
   display: inline-flex;
-  background-color: lightblue;
+  background-color: none;
+  background-color: none;
+}
+
+.hijoHijo {
+  display: flex;
+  justify-content: center;
+  background-color: none;
 }
 
 h1 {
   text-align: center;
   font-size: 3rem;
-}
-
-/* FOOTER */
-footer {
-  background-color: none;
-  grid-area: footer;
+  color: white;
 }
 
 /* SECTION 1 */
@@ -54,6 +60,25 @@ footer {
   display: flex;
   justify-content: center;
   grid-area: section1nosotros;
+  background-color: ellow;
+}
+
+.section1Indiv {
+  grid-area: sectionIndiv;
+}
+
+.red {
+  display: flex;
+  justify-content: center;
+}
+
+.imagenAuto {
+  height: 70%;
+  width: 90%;
+}
+
+.textoIndividual {
+  color: white;
 }
 
 #section2 {
@@ -113,6 +138,11 @@ footer {
 
 #section2nosotros {
   grid-area: section2nosotros;
+  background-color: blue;
+}
+
+.texto {
+  color: white;
 }
 
 /* Section 3, Mercedes Benz */
@@ -138,34 +168,21 @@ footer {
   border: 1px solid black;
 }
 
-nav {
-  grid-area: nav;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pruebaDiv {
-  display: flex;
-  justify-content: center;
-}
-
-.item {
-  display: inline-flex;
-  background-color: black;
-}
-
-.item a {
-  color: white;
-  font-size: 150%;
-}
-
 aside {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: yellw;
   grid-area: aside;
+  background-color: ink;
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
 
 /* Contacto.html */
@@ -179,6 +196,13 @@ aside {
 
 label {
   background-color: white;
+}
+
+/* FOOTER */
+footer {
+  background-color: none;
+  grid-area: footer;
+  background-color: black;
 }
 
 .instagram {
@@ -221,109 +245,38 @@ body {
   background-position: center;
 }
 
-/* en este sector empieza el css del archivo nosotros.html */
+/* en este sector empieza el css del archivo nosotros.html  */
 #bodyNosotros {
   display: grid;
   grid-template-areas: "header header header" "nav section1nosotros aside" "nav section2nosotros aside" "footer footer footer";
   grid-template-columns: 0.75fr 4fr 0.75fr;
-  grid-template-rows: 0.5fr 1fr 0.3fr 0.5fr;
+  grid-template-rows: 0.5fr 0.2r 0.2fr 0.5fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
   background-position: center;
 }
 
-.texto {
-  color: white;
+/*# sourceMappingURL=style.css.map */
+.autosIndividuales {
+  display: grid;
+  grid-template-areas: "header header header" "nav sectionIndiv aside" "footer footer footer";
+  grid-template-columns: 0.75fr 4fr 0.75fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
+  background-size: cover;
+  background-position: center;
+}
+
+.section1Indiv {
+  grid-area: sectionIndiv;
+}
+
+/*# sourceMappingURL=style.scss.map */
+/* Responsive Autos y camionetas */
+@media screen and (max-width: 500px) {
+  .paginaPrincipal {
+    font-size: 80%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
-
-.autosIndividuales
-{
-    display: grid;
-    grid-template-areas:
-    "header header header"
-    "nav sectionIndiv aside"
-    "footer footer footer";
-    grid-template-columns: 0.75fr 4fr 0.75fr;
-    grid-template-rows: 0.5fr 2fr 0.5fr;
-    background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
-    background-size: cover;
-    background-position: center;
- 
-}
-
-.section1Indiv
-{   
- grid-area: sectionIndiv;
- }
-
-
-.red{
-
-display: flex;
-justify-content: center;}
-
-.imagenAuto
-{
-  height: 500px;
-}
-
-.textoIndividual
-{
-  color: white;
-}
-
-header{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  grid-area: header;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
