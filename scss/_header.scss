@@ -3,35 +3,35 @@
 /* Declaro header en grid */
 header{
 
-    grid-area: header;
-  background-color: black;
+  grid-area: header;
+background-color: black;
 }
 .flexFlex
 {
-  background-color: black;
-  display: flex;
-  justify-content: center;
+background-color: black;
+display: flex;
+justify-content: center;
 }
 
-  
+
 
 .flexHeader {
-    display: inline-flex;
-    background-color: none;
+  display: inline-flex;
   background-color: none;
+background-color: none;
 }
 
 .hijoHijo
 {
-  display: flex;
-  justify-content: center;
-  background-color: none;
+display: flex;
+justify-content: center;
+background-color: none;
 
 }
 
 h1{
-    text-align: center;
-    font-size: 3rem;
-   color: white;
-     
+  text-align: center;
+  font-size: 3rem;
+ color: white;
+   
 }

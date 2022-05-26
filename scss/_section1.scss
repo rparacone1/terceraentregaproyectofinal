@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    align-items: center;
 
 }
 
@@ -30,6 +31,8 @@
     border: 1px solid black;
 }
 
+/* nosotros.html */
+
 #section1nosotros
 {  
     display: flex;
@@ -40,9 +43,14 @@
 }
 
 
+/* contacto .html */
 
-
-
+#section1contacto
+{  display: flex;
+  justify-content: center;
+    grid-area: section1contacto;
+  
+}
 
 
 .section1Indiv {

@@ -46,6 +46,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
 }
 
 .bmwHijo {
@@ -56,11 +57,19 @@ h1 {
   border: 1px solid black;
 }
 
+/* nosotros.html */
 #section1nosotros {
   display: flex;
   justify-content: center;
   grid-area: section1nosotros;
   background-color: ellow;
+}
+
+/* contacto .html */
+#section1contacto {
+  display: flex;
+  justify-content: center;
+  grid-area: section1contacto;
 }
 
 .section1Indiv {
@@ -121,6 +130,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
 }
 
 .audiHijo {
@@ -134,6 +144,11 @@ h1 {
 
 .audiHijo {
   border: 1px solid black;
+}
+
+/* contacto.html */
+#section2contacto {
+  grid-area: section2contacto;
 }
 
 #section2nosotros {
@@ -226,7 +241,7 @@ body {
   display: grid;
   grid-template-areas: "header header header" "nav section1 aside" "nav section2 aside" "footer footer footer";
   grid-template-columns: 0.75fr 4fr 0.75fr;
-  grid-template-rows: 0.5fr 2fr 2fr 0.5fr;
+  grid-template-rows: 0.75fr 2fr 2fr 0.45fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
   background-position: center;
@@ -238,7 +253,7 @@ body {
   display: grid;
   grid-template-areas: "header header header" "nav section1autos aside" "nav section2autos aside" "nav section3 aside" "footer footer footer";
   grid-template-columns: 0.75fr 4fr 0.75fr;
-  grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 0.75fr 1.33fr 1.33fr 1.33fr 0.45fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
   background-position: center;
@@ -249,7 +264,18 @@ body {
   display: grid;
   grid-template-areas: "header header header" "nav section1nosotros aside" "nav section2nosotros aside" "footer footer footer";
   grid-template-columns: 0.75fr 4fr 0.75fr;
-  grid-template-rows: 0.5fr 0.2r 0.2fr 0.5fr;
+  grid-template-rows: 0.6fr 2fr 2fr 0.45fr;
+  background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
+  background-size: cover;
+  background-position: center;
+}
+
+/* contato.html */
+#bodyContacto {
+  display: grid;
+  grid-template-areas: "header header header" "nav section1contacto aside" "nav section2contacto aside" "footer footer footer";
+  grid-template-columns: 0.75fr 4fr 0.75fr;
+  grid-template-rows: 0.62fr 2fr 2fr 0.45fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
   background-position: center;
@@ -260,7 +286,7 @@ body {
   display: grid;
   grid-template-areas: "header header header" "nav sectionIndiv aside" "footer footer footer";
   grid-template-columns: 0.75fr 4fr 0.75fr;
-  grid-template-rows: 0.5fr 2fr 0.5fr;
+  grid-template-rows: 0.75fr 4fr 0.75fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
   background-position: center;
@@ -273,8 +299,57 @@ body {
 /*# sourceMappingURL=style.scss.map */
 /* Responsive Autos y camionetas */
 @media screen and (max-width: 500px) {
+  #body {
+    display: grid;
+    grid-template-areas: "header header header" "nav section1autos aside" "nav section2autos aside" "nav section3 aside" "footer footer footer";
+    grid-template-columns: 0.25fr 4fr 0.25fr;
+    grid-template-rows: 0.25fr 1.33fr 1.33fr 1.33fr 0.15fr;
+    background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
+    background-size: cover;
+    background-position: center;
+  }
+
   .paginaPrincipal {
-    font-size: 80%;
+    font-size: 50%;
+  }
+
+  .bmwPadre {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .audiPadre {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .benzPadre {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .we {
+    height: 300px;
+    width: auto;
+  }
+
+  .texto {
+    font-size: 70%;
+  }
+}
+@media screen and (min-width: 490px) and (max-width: 968px) {
+  .paginaPrincipal {
+    font-size: 30%;
+  }
+
+  .we {
+    height: 400px;
+    width: auto;
+  }
+
+  .texto {
+    font-size: 100%;
   }
 }
 
