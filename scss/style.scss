@@ -167,10 +167,28 @@ flex-direction: column;
   font-size: 70%;
 }
 
+.autosIndividuales {
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+   "nav sectionIndiv aside" 
+   "footer footer footer";
+  grid-template-columns: 0.75fr 4fr 0.75fr;
+  grid-template-rows: 0.75fr 5.5fr 0.75fr;
+  background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
+  background-size: cover;
+  background-position: center;
+}
+.imagenAuto
+{
+  height: 250px;
+  width: auto;
+}
+
 }
 
 
-@media screen and (min-width: 490px) and (max-width: 968px)
+@media screen and (min-width: 500px) and (max-width: 968px)
 {                                 
 .paginaPrincipal{
   font-size: 30%;
@@ -183,7 +201,36 @@ flex-direction: column;
   font-size: 100%;
 }
 
+.autosIndividuales {
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+   "nav sectionIndiv aside" 
+   "footer footer footer";
+  grid-template-columns: 0.75fr 4fr 0.75fr;
+  grid-template-rows: 0.75fr 5.5fr 0.75fr;
+  background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
+  background-size: cover;
+  background-position: center;
+}
+
+}
 
 
+
+@media screen and (min-width: 969px)
+{                                 
+  .autosIndividuales {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+     "nav sectionIndiv aside" 
+     "footer footer footer";
+    grid-template-columns: 0.75fr 4fr 0.75fr;
+    grid-template-rows: 0.75fr 5.5fr 0.75fr;
+    background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
+    background-size: cover;
+    background-position: center;
+  }
 }
 
