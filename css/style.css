@@ -46,6 +46,11 @@ h1 {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+}
+
+.bmwpadrePadre {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -133,10 +138,6 @@ h1 {
   align-items: center;
 }
 
-.audiHijo {
-  background-color: white;
-}
-
 .tituloAudi {
   text-align: center;
   color: white;
@@ -144,6 +145,12 @@ h1 {
 
 .audiHijo {
   border: 1px solid black;
+}
+
+.audipadrePadre {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* contacto.html */
@@ -180,6 +187,12 @@ h1 {
 .benzHijo {
   background-color: white;
   border: 1px solid black;
+}
+
+.benzpadrePadre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 aside {
@@ -302,7 +315,7 @@ body {
   #body {
     display: grid;
     grid-template-areas: "header header header" "nav section1autos aside" "nav section2autos aside" "nav section3 aside" "footer footer footer";
-    grid-template-columns: 0.25fr 4fr 0.25fr;
+    grid-template-columns: 0.75fr 4fr 0.75fr;
     grid-template-rows: 0.25fr 1.33fr 1.33fr 1.33fr 0.15fr;
     background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
     background-size: cover;
@@ -311,22 +324,6 @@ body {
 
   .paginaPrincipal {
     font-size: 50%;
-  }
-
-  .bmwPadre {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-
-  .audiPadre {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .benzPadre {
-    display: flex;
-    flex-direction: column;
   }
 
   .we {

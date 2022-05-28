@@ -19,8 +19,13 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    align-items: center;
+}
 
+.bmwpadrePadre
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bmwHijo
