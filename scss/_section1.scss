@@ -51,12 +51,51 @@
 /* contacto .html */
 
 #section1contacto
-{  display: flex;
-  justify-content: center;
+{  
     grid-area: section1contacto;
-  
+}
+.son
+{
+  display: flex;
+  justify-content: center ;
 }
 
+.form-row
+{
+margin-bottom: 45px;
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+flex-wrap: wrap;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* serie3sedan.html */
 
 .section1Indiv {
     grid-area: sectionIndiv;

@@ -15,7 +15,7 @@
 }
 
 /* Body */
-body {
+.index {
   display: grid;
   grid-template-areas:
    "header header header"
@@ -72,7 +72,7 @@ body {
 
 
 
-/* contato.html */
+/* contacto.html */
 
 #bodyContacto 
 {
@@ -82,12 +82,18 @@ body {
   "nav section1contacto aside"
    "nav section2contacto aside"
     "footer footer footer";
-  grid-template-columns: 0.75fr 4fr 0.75fr;
-  grid-template-rows: 0.62fr 2fr 2fr 0.45fr;
-  background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
+    grid-template-columns: 0.75fr 4fr 0.75fr;
+    grid-template-rows: 0.75fr 2fr 2fr 0.45fr;
   background-size: cover;
   background-position: center;
 }
+
+.speaker-form-header
+{
+  text-align: center;
+  background-color: blue;
+}
+
 
 
 
@@ -104,7 +110,7 @@ body {
    "nav sectionIndiv aside" 
    "footer footer footer";
   grid-template-columns: 0.75fr 4fr 0.75fr;
-  grid-template-rows: 0.75fr 4fr 0.75fr;
+  grid-template-rows: 0.5fr 4fr 0.75fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
   background-position: center;
@@ -139,6 +145,9 @@ body {
 .paginaPrincipal{
 font-size: 50%;
 }
+.reel{
+  font-size: 80%;
+}
 
 
 .we{
@@ -172,7 +181,7 @@ font-size: 50%;
 @media screen and (min-width: 500px) and (max-width: 968px)
 {                                 
 .paginaPrincipal{
-  font-size: 30%;
+  font-size: 90%;
 }
 .we{
   height: 400px; width: auto;
@@ -195,10 +204,35 @@ font-size: 50%;
   background-position: center;
 }
 
+
+#body {
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+   "nav section1autos aside" 
+   "nav section2autos aside" 
+   "nav section3 aside" 
+   "footer footer footer";
+  grid-template-columns: 0.75fr 4fr 0.75fr;
+  grid-template-rows: 0.25fr 1.33fr 1.33fr 1.33fr 0.15fr;
+  background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.reel
+{
+  font-size: 90%;
 }
 
 
 
+
+
+
+
+}
 @media screen and (min-width: 969px)
 {                                 
   .autosIndividuales {
@@ -210,8 +244,25 @@ font-size: 50%;
     grid-template-columns: 0.75fr 4fr 0.75fr;
     grid-template-rows: 0.75fr 5.5fr 0.75fr;
     background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
-    background-size: cover;
+
     background-position: center;
+  }
+
+  .reel
+  {
+    font-size: 200%;
   }
 }
 
+/* exito htlml */
+
+.exitohtml
+{
+  font-size: 2rem;
+  color: black;
+}
+
+.tickdiv{
+  display: flex;
+  justify-content: center;
+}
