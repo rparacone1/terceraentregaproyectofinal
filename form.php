@@ -12,10 +12,9 @@ $para = 'renato.paracone@hotmail.com';
 $asunto = 'Este mail fue enviado desde la web';
 
 // Funcion que envia la info del form//
-mail($para, $asunto, utf8_decode($mensaje));
+mail($para, $asunto, utf8_decode($nombre, $email, $mensaje));
 
 header('Location:exito.html')
-
 
 
 ?>

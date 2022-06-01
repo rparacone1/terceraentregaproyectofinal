@@ -269,11 +269,6 @@ footer {
 
 /* Nesting o anidamiento w/lepafresh */
 /* Selector universal, pego los objetos*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
 /* Body */
 .index {
   display: grid;
@@ -282,6 +277,8 @@ footer {
   grid-template-rows: 0.75fr 2fr 2fr 0.45fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
 }
 
@@ -294,6 +291,8 @@ footer {
   grid-template-rows: 0.75fr 1.33fr 1.33fr 1.33fr 0.45fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
 }
 
@@ -305,6 +304,8 @@ footer {
   grid-template-rows: 0.6fr 2fr 2fr 0.45fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
 }
 
@@ -314,8 +315,6 @@ footer {
   grid-template-areas: "header header header" "nav section1contacto aside" "nav section2contacto aside" "footer footer footer";
   grid-template-columns: 0.75fr 4fr 0.75fr;
   grid-template-rows: 0.75fr 2fr 2fr 0.45fr;
-  background-size: cover;
-  background-position: center;
 }
 
 .speaker-form-header {
@@ -331,6 +330,8 @@ footer {
   grid-template-rows: 0.5fr 4fr 0.75fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
 }
 
@@ -348,6 +349,8 @@ footer {
     grid-template-rows: 0.25fr 1.33fr 1.33fr 1.33fr 0.15fr;
     background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
   }
 
@@ -375,6 +378,8 @@ footer {
     grid-template-rows: 0.75fr 5.5fr 0.75fr;
     background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
   }
 
@@ -404,6 +409,8 @@ footer {
     grid-template-rows: 0.75fr 5.5fr 0.75fr;
     background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
   }
 
@@ -414,6 +421,8 @@ footer {
     grid-template-rows: 0.25fr 1.33fr 1.33fr 1.33fr 0.15fr;
     background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
   }
 
@@ -428,6 +437,9 @@ footer {
     grid-template-columns: 0.75fr 4fr 0.75fr;
     grid-template-rows: 0.75fr 5.5fr 0.75fr;
     background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
   }
 

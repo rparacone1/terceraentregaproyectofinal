@@ -9,10 +9,7 @@
 
 /* Nesting o anidamiento w/lepafresh */
 /* Selector universal, pego los objetos*/
-* {
-  margin: 0;
-  padding: 0;
-}
+
 
 /* Body */
 .index {
@@ -26,6 +23,8 @@
   grid-template-rows: 0.75fr 2fr 2fr 0.45fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
 }
 
@@ -43,6 +42,8 @@
   grid-template-rows: 0.75fr 1.33fr 1.33fr 1.33fr 0.45fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
 }
  /* en este sector empieza el css del archivo nosotros.html  */
@@ -59,6 +60,8 @@
    grid-template-rows: 0.60fr 2fr 2fr 0.45fr;
    background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
    background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
    background-position: center;
  }
  
@@ -84,8 +87,7 @@
     "footer footer footer";
     grid-template-columns: 0.75fr 4fr 0.75fr;
     grid-template-rows: 0.75fr 2fr 2fr 0.45fr;
-  background-size: cover;
-  background-position: center;
+
 }
 
 .speaker-form-header
@@ -113,6 +115,8 @@
   grid-template-rows: 0.5fr 4fr 0.75fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
 }
 
@@ -137,6 +141,8 @@
     grid-template-rows: 0.25fr 1.33fr 1.33fr 1.33fr 0.15fr;
     background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
   }
 
@@ -167,6 +173,8 @@ font-size: 50%;
   grid-template-rows: 0.75fr 5.5fr 0.75fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
 }
 .imagenAuto
@@ -202,6 +210,8 @@ font-size: 50%;
   grid-template-rows: 0.75fr 5.5fr 0.75fr;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
 }
 
@@ -216,7 +226,10 @@ font-size: 50%;
    "footer footer footer";
   grid-template-columns: 0.75fr 4fr 0.75fr;
   grid-template-rows: 0.25fr 1.33fr 1.33fr 1.33fr 0.15fr;
-  background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);  background-size: cover;
+  background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
 
 }
@@ -244,8 +257,10 @@ font-size: 50%;
     grid-template-columns: 0.75fr 4fr 0.75fr;
     grid-template-rows: 0.75fr 5.5fr 0.75fr;
     background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
-
-    background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   }
 
   .reel
