@@ -40,7 +40,7 @@ h2 {
   justify-content: center;
   align-items: center;
   grid-area: section1;
-  margin: 50px;
+  margin: 50px 0px 0px 0px;
 }
 
 /* autos html */
