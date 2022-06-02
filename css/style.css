@@ -85,6 +85,7 @@ h2 {
 .son {
   display: flex;
   justify-content: center;
+  margin: 15px;
 }
 
 .form-row {
