@@ -255,6 +255,8 @@ footer {
   background-color: none;
   grid-area: footer;
   background-color: black;
+  align-self: flex-end;
+  width: 100%;
 }
 
 .instagram {
@@ -271,10 +273,15 @@ footer {
 /* Selector universal, pego los objetos*/
 /* Body */
 .index {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
   display: grid;
   grid-template-areas: "header header header" "nav section1 aside" "nav section2 aside" "footer footer footer";
   grid-template-columns: 0.75fr 4fr 0.75fr;
-  grid-template-rows: 0.75fr 2fr 2fr 0.45fr;
+  grid-template-rows: auto 2fr 2fr auto;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
   background-repeat: no-repeat;
@@ -285,10 +292,15 @@ footer {
 /* En este sector empieza el css de autos.html */
 /* Creo una estructura gird para auto.html nueva, modifico la anterior sumandole una tercer etiqueta de section */
 #body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
   display: grid;
   grid-template-areas: "header header header" "nav section1autos aside" "nav section2autos aside" "nav section3 aside" "footer footer footer";
   grid-template-columns: 0.75fr 4fr 0.75fr;
-  grid-template-rows: 0.75fr 1.33fr 1.33fr 1.33fr 0.45fr;
+  grid-template-rows: auto 1.33fr 1.33fr 1.33fr auto;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
   background-repeat: no-repeat;
@@ -298,10 +310,15 @@ footer {
 
 /* en este sector empieza el css del archivo nosotros.html  */
 #bodyNosotros {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
   display: grid;
   grid-template-areas: "header header header" "nav section1nosotros aside" "nav section2nosotros aside" "footer footer footer";
   grid-template-columns: 0.75fr 4fr 0.75fr;
-  grid-template-rows: 0.6fr 2fr 2fr 0.45fr;
+  grid-template-rows: auto 2fr 2fr auto;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
   background-repeat: no-repeat;
@@ -311,10 +328,15 @@ footer {
 
 /* contacto.html */
 #bodyContacto {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
   display: grid;
   grid-template-areas: "header header header" "nav section1contacto aside" "nav section2contacto aside" "footer footer footer";
   grid-template-columns: 0.75fr 4fr 0.75fr;
-  grid-template-rows: 0.75fr 2fr 2fr 0.45fr;
+  grid-template-rows: auto 2fr 0.5fr auto;
 }
 
 .speaker-form-header {
@@ -324,10 +346,15 @@ footer {
 
 /*# sourceMappingURL=style.css.map */
 .autosIndividuales {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
   display: grid;
   grid-template-areas: "header header header" "nav sectionIndiv aside" "footer footer footer";
-  grid-template-columns: 0.75fr 4fr 0.75fr;
-  grid-template-rows: 0.5fr 4fr 0.75fr;
+  grid-template-columns: 0.75fr 6fr 0.75fr;
+  grid-template-rows: auto 6.5fr auto;
   background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
   background-size: cover;
   background-repeat: no-repeat;
@@ -342,18 +369,6 @@ footer {
 /*# sourceMappingURL=style.scss.map */
 /* Responsive Autos y camionetas */
 @media screen and (max-width: 500px) {
-  #body {
-    display: grid;
-    grid-template-areas: "header header header" "nav section1autos aside" "nav section2autos aside" "nav section3 aside" "footer footer footer";
-    grid-template-columns: 0.75fr 4fr 0.75fr;
-    grid-template-rows: 0.25fr 1.33fr 1.33fr 1.33fr 0.15fr;
-    background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-  }
-
   .paginaPrincipal {
     font-size: 50%;
   }
@@ -369,18 +384,6 @@ footer {
 
   .texto {
     font-size: 70%;
-  }
-
-  .autosIndividuales {
-    display: grid;
-    grid-template-areas: "header header header" "nav sectionIndiv aside" "footer footer footer";
-    grid-template-columns: 0.75fr 4fr 0.75fr;
-    grid-template-rows: 0.75fr 5.5fr 0.75fr;
-    background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
   }
 
   .imagenAuto {
@@ -402,47 +405,11 @@ footer {
     font-size: 100%;
   }
 
-  .autosIndividuales {
-    display: grid;
-    grid-template-areas: "header header header" "nav sectionIndiv aside" "footer footer footer";
-    grid-template-columns: 0.75fr 4fr 0.75fr;
-    grid-template-rows: 0.75fr 5.5fr 0.75fr;
-    background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-  }
-
-  #body {
-    display: grid;
-    grid-template-areas: "header header header" "nav section1autos aside" "nav section2autos aside" "nav section3 aside" "footer footer footer";
-    grid-template-columns: 0.75fr 4fr 0.75fr;
-    grid-template-rows: 0.25fr 1.33fr 1.33fr 1.33fr 0.15fr;
-    background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-  }
-
   .reel {
     font-size: 90%;
   }
 }
 @media screen and (min-width: 969px) {
-  .autosIndividuales {
-    display: grid;
-    grid-template-areas: "header header header" "nav sectionIndiv aside" "footer footer footer";
-    grid-template-columns: 0.75fr 4fr 0.75fr;
-    grid-template-rows: 0.75fr 5.5fr 0.75fr;
-    background: url(../imagenes/5cc67fda-d686-4ac5-a34e-a7a7ea6ab261_resized+pic.jog.avif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-  }
-
   .reel {
     font-size: 200%;
   }

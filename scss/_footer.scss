@@ -4,7 +4,9 @@ footer{
     background-color: none;
     grid-area: footer;
     background-color: black;
-    
+    align-self: flex-end;
+    width: 100%;
+
 }
 
 .instagram
@@ -17,6 +19,8 @@ footer{
     font-size: 20px;
     color: white;
 }
+
+
 
 
 
